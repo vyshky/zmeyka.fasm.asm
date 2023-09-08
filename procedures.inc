@@ -4,10 +4,10 @@ proc adjustTheConsole
      enter 0,0
      invoke SetConsoleTextAttribute,[stdOutDescriptor], 4
      invoke GetConsoleScreenBufferInfo, [stdOutDescriptor], outBufferInfo
-     movzx ebx, word [width]
+     mov bx, word [width]
      add ebx,2
      mov [outBufferInfo.srWindow.right], bx
-     movzx ebx, word [heght]
+     mov bx, word [heght]
      add ebx,10
      mov [outBufferInfo.srWindow.bottom], bx
      invoke SetConsoleWindowInfo, [stdOutDescriptor], TRUE, outBufferInfo.srWindow

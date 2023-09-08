@@ -13,7 +13,10 @@ import kernel,\
        SetConsoleWindowInfo,'SetConsoleWindowInfo',\
        GetConsoleScreenBufferInfo,'GetConsoleScreenBufferInfo',\
        WriteConsoleOutputCharacter,'WriteConsoleOutputCharacterA',\
-       GetLastError,'GetLastError'
+       GetLastError,'GetLastError',\
+       Sleep, 'Sleep',\
+       ReadConsoleOutputCharacter,'ReadConsoleOutputCharacterA'
+
 
 import msvcrt,\
        printf,'printf',\
