@@ -56,9 +56,10 @@ proc drawGameField
         jne @leftSide
 
      ; Переводим курсор в конец игрового поля
-     movzx ebx, word [width]
-     add ebx,1
-     mov [outBufferInfo.dwCursorPosition.x],bx
+     ;movzx ebx, word [width]
+     ;add ebx,1
+     ;mov [outBufferInfo.dwCursorPosition.x],bx
+
      movzx ebx, word [heght]
      add ebx,1
      mov [outBufferInfo.dwCursorPosition.y],bx
